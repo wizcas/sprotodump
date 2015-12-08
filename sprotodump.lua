@@ -3,12 +3,12 @@ local parse_param = require "param"
 local util = require "util"
 
 ------------------------------- readme -------------------------------------
-local README = [[
+local README = [=[
 sprotodump is a simple tool to convert sproto file to spb binary.
 
 usage: lua sprotodump.lua <option> <sproto_file1 sproto_file2 ...> [[<out_option> <outfile>] ...] [namespace_option]
 
-    option: 
+    option:
         -cs              dump to cSharp code file
         -spb             dump to binary spb  file
         -go              dump to go code file
@@ -20,7 +20,7 @@ usage: lua sprotodump.lua <option> <sproto_file1 sproto_file2 ...> [[<out_option
 
     namespace_option:
         -namespace       add namespace to type and protocol
-  ]]
+  ]=]
 
 
 ------------------------------- module -------------------------------------

@@ -90,7 +90,7 @@ local function get_file_header(filename)
 end
 
 local function canonical_name(name)
-    return name:gsub("%f[^\0%_%.]%l",string.upper):gsub("[%_%.]","")
+    return name:gsub("%f[^\\0%_%.]%l",string.upper):gsub("[%_%.]","")
 end
 
 local type_map = {
